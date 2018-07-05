@@ -1,0 +1,90 @@
+.calculatorWrapper {
+    display: grid;
+    grid-template-areas:
+            '.   .       .       .        .      .'
+            '. display display display display   .'
+            '. key7    key8    key9    add       .'
+            '. key4    key5    key6    subtract  .'
+            '. key1    key2    key3    equals    .'
+            '. clear   key0    dot     equals    .';
+
+
+    grid-template-columns:20vw 15vw 15vw 15vw 15vw 20vw;
+    grid-template-rows:20vh 10vh 10vh 10vh 10vh 10vh;
+
+}
+
+.key-0 {
+    grid-area: key0;
+}
+.key-1 {
+    grid-area: key1;
+}
+.key-2 {
+    grid-area: key2;
+}
+.key-3 {
+    grid-area: key3;
+}
+.key-4 {
+    grid-area: key4;
+}
+.key-5 {
+    grid-area: key5;
+}
+.key-6 {
+    grid-area: key6;
+}
+.key-7 {
+    grid-area: key7;
+}
+.key-8 {
+    grid-area: key8;
+}
+.key-9 {
+    grid-area: key9;
+}
+
+.key-add {
+    grid-area: add;
+}
+
+.key-subtract {
+    grid-area: subtract;
+}
+
+.key-equals {
+    grid-area: equals;
+}
+
+.key-dot {
+    grid-area: dot;
+}
+
+.key-clear {
+    grid-area: clear;
+}
+
+.calculator-display {
+    grid-area: display;
+
+    color: white;
+    background: #1c191c;
+    font-size: 5vh;
+    padding: 2vh 2vw;
+    text-align: right;
+}
+
+.key {
+    border: 1px solid #777;
+    text-align: center;
+    font-size: 3vh;
+}
+
+.function-keys {
+    background: linear-gradient(to bottom, rgba(256,256,256) 0%, rgba(196,194,204,1) 100%);
+}
+
+.operator-keys {
+    background: linear-gradient(to bottom, rgba(258,176,23,1) 0%, rgba(7,164,57,1) 100%);
+}
