@@ -103,7 +103,7 @@ class Calculator extends React.Component {
     const { displayValue } = this.state;
 
     return (
-      <div className="calculatorWrapper">
+      <div className="calculator-wrapper">
         <div className="calculator-display">{displayValue}</div>
         <div className="key operator-keys key-0">
           <Button onClick={() => this.inputDigit(0)}>0</Button>

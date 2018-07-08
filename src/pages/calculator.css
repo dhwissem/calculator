@@ -1,4 +1,4 @@
-.calculatorWrapper {
+.calculator-wrapper {
     display: grid;
     grid-template-areas:
             '.   .       .       .        .      .'

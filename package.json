@@ -1,16 +1,25 @@
 {
   "name": "calculator",
+  "homepage": "http://jappaa.github.io/calculator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4"
   },
+  "devDependencies": {
+    "enzyme": "^2.9.1",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "20.0.4"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
